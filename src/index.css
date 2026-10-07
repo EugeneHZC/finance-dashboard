@@ -1,0 +1,45 @@
+@import './styles/tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    font-variant-numeric: tabular-nums;
+    background-color: var(--canvas);
+    color: var(--ink);
+    min-height: 100vh;
+  }
+
+  /* Accessible focus outline */
+  :focus-visible {
+    outline: 2px solid var(--marine);
+    outline-offset: 2px;
+  }
+
+  /* Remove default focus for non-keyboard */
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+}
+
+/* Tabular numbers utility */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

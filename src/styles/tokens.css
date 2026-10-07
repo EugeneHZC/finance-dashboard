@@ -1,0 +1,37 @@
+:root {
+  --ink: #15212b;
+  --slate: #566474;
+  --canvas: #f1f3f5;
+  --surface: #ffffff;
+  --line: #d9dfe5;
+  --marine: #0b5c73;
+  --marine-deep: #084a5d;
+  --marine-tint: #dceef2;
+  --saffron: #f2a81d;
+  --saffron-tint: #fdf1d6;
+  --gain: #1b7f5a;
+  --gain-tint: #e1f2ea;
+  --loss: #b83a2e;
+  --loss-tint: #f8e4e1;
+  --radius-control: 4px;
+  --radius-panel: 8px;
+  --shadow-elevation: 0 8px 24px rgba(21, 33, 43, 0.12);
+}
+
+:root[data-theme="dark"] {
+  --ink: #e8edf1;
+  --slate: #9aa8b5;
+  --canvas: #0e161d;
+  --surface: #16212a;
+  --line: #263441;
+  --marine: #4fb3cc;
+  --marine-deep: #3ea0b8;
+  --marine-tint: #142a35;
+  --saffron: #f2a81d;
+  --saffron-tint: #2e2413;
+  --gain: #4cc38a;
+  --gain-tint: #132a20;
+  --loss: #f0776b;
+  --loss-tint: #2f1716;
+  --shadow-elevation: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
